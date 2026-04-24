@@ -1,6 +1,7 @@
 # 小智聊天机器人 — 2.8inch ESP32-S3 Display
 
 基于 [espressif/esp-iot-solution](https://github.com/espressif/esp-iot-solution) `examples/ai/xiaozhi_chat` 移植到 [2.8inch ESP32-S3 Display](https://www.lcdwiki.com/zh/2.8inch_ESP32-S3_Display) 开发板的语音聊天机器人固件。
+板子：https://www.lcdwiki.com/zh/2.8inch_ESP32-S3_Display
 
 ---
 
