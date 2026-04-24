@@ -1,0 +1,15 @@
+version: "1.0.0"
+description: "Board Support Package for 2.8inch ESP32-S3 Display (ILI9341 + I2S audio)"
+url: "https://www.lcdwiki.com/zh/2.8inch_ESP32-S3_Display"
+
+dependencies:
+  idf: ">=5.5"
+
+  ## ILI9341 LCD panel driver
+  espressif/esp_lcd_ili9341: ">=1.0.0"
+
+  ## Audio codec device abstraction (raw I2S, no I2C codec)
+  espressif/esp_codec_dev: ">=1.0.0"
+
+  ## LVGL port for ESP-IDF (required by display module)
+  espressif/esp_lvgl_port: ">=2.3.0"

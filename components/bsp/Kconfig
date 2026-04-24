@@ -1,0 +1,26 @@
+menu "Board Support Package (2.8inch ESP32-S3 Display)"
+
+    config BSP_LCD_SPI_CLOCK_HZ
+        int "LCD SPI clock frequency (Hz)"
+        default 40000000
+        range 1000000 80000000
+        help
+            SPI clock frequency for the ILI9341 LCD panel.
+            Maximum is 40 MHz for write operations.
+
+    config BSP_LCD_COLOR_INVERT
+        bool "Invert LCD colors"
+        default y
+        help
+            Enable color inversion for the ILI9341 panel.
+            Usually required for correct color display.
+
+    config BSP_AUDIO_MCLK_MULTIPLE
+        int "I2S MCLK multiple of sample rate"
+        default 256
+        range 128 512
+        help
+            MCLK = sample_rate * multiple.
+            Set to 256 for most I2S DACs/ADCs.
+
+endmenu

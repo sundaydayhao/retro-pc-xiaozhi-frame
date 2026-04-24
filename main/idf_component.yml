@@ -1,0 +1,19 @@
+## IDF Component Manager Manifest File
+dependencies:
+
+  ## Xiaozhi Agent SDK (MQTT/WebSocket transport, MCP tools)
+  espressif/esp_xiaozhi: ">=0.1.0"
+
+  ## Audio processing: Opus codec, AFE wake-word detection, audio manager
+  jason-mao/av_processor: "^0.5.5"
+
+  ## Chinese fonts + Font Awesome emoji/icons for LVGL UI
+  78/xiaozhi-fonts: "~1.3.2"
+
+  ## WiFi connection helper (from IDF examples)
+  protocol_examples_common:
+    path: ${IDF_PATH}/examples/common_components/protocol_examples_common
+
+  ## Required IDF version
+  idf:
+    version: ">=5.5.0"
